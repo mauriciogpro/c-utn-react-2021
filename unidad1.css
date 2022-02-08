@@ -1,0 +1,38 @@
+body {
+  background: aquamarine;
+}
+footer {
+  background-color: cadetblue;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer a {
+  font-size: 1rem;
+}
+footer a:link {
+  color: purple; /*aspecto visitado*/
+}
+.shape {
+  height: 12.5rem;
+  width: 12.5rem;
+  margin: 1rem 0rem;
+  font-size: 1rem;
+}
+.pal1 {
+  background: #f00;
+}
+.pal2 {
+  background: #f03;
+}
+.pal3 {
+  background: #f06;
+}
+.pal4 {
+  background: #f09;
+}
+.pal5 {
+  background: #f0c;
+}
+.pal6 {
+  background: #f0f;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="unidad2.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+
+
+  <title>Trabajo Practico 2</title>
+</head>
+<body>
+  <header class="jumbo">
+    <h2 class="jumbo__h2">Ordene sus lentes</h2>
+    <h1 class="jumbo__h1">OPTICA IRIS</h1>
+  </header>
+  <main>
+  <h2>Haga su pedido.</h2>
+  <form action="get">
+    <div class="gridcontainer">
+      <!-- Calibre - Puente Patilla Codigo-->
+      <div class="form__section">
+        <h3>Medidas del Armazon</h3>
+        <label for="id_code">Codigo</label>  
+        <input class="form__input" type="number" id="id_code" name="Codigo de Calibre" min="99999" max="999999">
+        <p>Si no tiene el codigo puede medirlo ud. mismo</p> 
+        <!-- Calibre - Puente Patilla Custom-->
+        <label for="calibre">Calibre</label>
+        <input class="form__input centered" type="number" name="Calibre " id="calibre"></br>
+        <label for="puente">Puente</label>
+        <input class="form__input centered" type="number" name="Puente" id="puente"> </br>
+        <label for="Patilla">Patilla</label> 
+        <input class="form__input centered" type="number" name="Patilla" id="patilla"> 
+      </div>
+      <!-- Marca Armazon-->
+      <div class="form__section">
+        <h3>Tipo de Armazon</h3>
+        <label for=marca>Elige una marca:</label> 
+        <select name="Marca" id="marca">
+          <option value="MDisponibles">Marcas Disponibles</option>
+          <option value="Ray-Ban">Ray-Ban</option>
+          <option value="Polaroid">Polaroid</option>
+          <option value="Oakley">Oakley</option>
+        </select>
+        <label for="frame_color">Color de Armazon</label> 
+        <input class="form__input" type="color" name="frame_color" id="frame_color">
+      </div>
+      <!-- Color Armazon-->
+      
+      
+      <!-- Frente Armazon-->
+      <div class="form__section">
+        <h3>Tipo de Montura:</h3>
+        <input class="form__input" type="radio" name="montura" id="montura" value="Montura Completa" checked>
+        <label for="montura">Montura Completa</label><br>
+        
+        <input class="form__input" type="radio" name="montura" id="montura" value="Media Montura">
+        <label for="montura">Media Montura</label><br>
+        
+        <input class="form__input" type="radio" name="montura" id="montura" value="Sin Montura">
+        <label for="montura">Sin Montura</label>
+        
+      </div>
+      <!-- Material Armazon-->
+      <div class="form__section">
+        <h3>Elige el material que prefieres</h3>
+        <label for="metal"><input class="form__input" type="checkbox" name="Metal" id="metal"> Metal</label><br>
+        
+        <label for="plastico"><input class="form__input" type="checkbox" name="Plastico" id="plastico"> Plastico</label><br> 
+
+        <label for="berilio"><input class="form__input" type="checkbox" name="Berilio" id="berilio"> Berilio</label><br> 
+
+         <label for="titanio"><input class="form__input" type="checkbox" name="Titanio" id="titanio"> Titanio</label> 
+      </div>
+      <!-- Estilo Armazon-->
+      <div class="form__section">
+        <h3><label for="estilo">Estilo de Armazon</label></h3> 
+        <p></p>
+        <textarea  name="estilo" rows="15" cols="15" placeholder="Describe como te gustaria que sea. (redondo, cuadrado, etc.)"></textarea>
+      </div>
+      <!--Lentes-->
+
+      <!-- Valores esferico, cilindirco, eje, addicion Lentes-->
+      <div class="form__section">
+        <h3>Tipo de lentes</h3>
+        <div class="izquierdo">
+        <p> Izquierdo</p>
+        <label for="l_esferico">Esferico</label> 
+        <input class="form__input" type="checkbox" name="l_esferico" id="l_esfericol">
+        <label for="l_cilindrico">Cilindrico</label> 
+        <input class="form__input" type="checkbox" name="l_cilindrico" id="l_cilindrico">
+        <label for="l_eje">Eje</label> 
+        <input class="form__input" type="checkbox" name="l_eje" id="l_eje">
+        <label for="l_addicion">Addicion</label> 
+        <input class="form__input" type="checkbox" name="l_addicion" id="l_addicion">
+        <label for="left_eye">Graduacion</label> 
+        <input class="form__input" type="number" id="left_eye" name="left_eye" placeholder="1.0" step="0.01">
+        </div>
+      <div class="derecho">
+        <p>Ojo Derecho</p>
+        <label for="r_esferico">Esferico</label> 
+        <input class="form__input" type="checkbox" name="r_esferico" id="r_esferico">
+        <label for="r_cilindrico">Cilindrico</label> 
+        <input class="form__input" type="checkbox" name="r_cilindrico" id="r_cilindrico">
+        <label for="r_eje">Eje</label> 
+        <input class="form__input" type="checkbox" name="r_eje" id="r_eje">
+        <label for="r_addicion">Addicion</label> 
+        <input class="form__input" type="checkbox" name="r_addicion" id="r_addicion">
+        <label for="rigth_eye">Graduacion</label> 
+        <input class="form__input" type="number" id="left_eye" name="left_eye" placeholder="1.0" step="0.01">
+      </div>
+      </div>
+      <!-- transparnetes bluefilter, fotocomaticos, color Lentes-->
+      <div class="form-group">
+        <h3><label for=acabado>Acabado de laboratorio:</label> </h3>
+        <select name="acabado" id="marca">
+          <option value="transparentes">Transparentes</option>
+          <option value="blue-filter">Filtro Azul</option>
+          <option value="fotocromaticos">Fotocromaticos</option>
+          <option value="lentes de color">Lentes de Color</option>
+        </select><br>
+        <label for="lens_color">Color del Lente: <input class="form__input" type="color" name="lens_color" id="lens_color"></label> 
+      </div>
+      
+        
+      <!-- adjuntar receta-->
+      <div class="form-group">
+      <label for="recipe">Receta Escaneada</label> 
+      <input class="form__input" type="file" id="recipe" name="recipe" accept="image/png, image/jpeg">
+      </div>
+    <!--datos-->
+    <div class="form-group"></div>
+    <h3>Datos Personales</h3>
+    <!--email-->
+    <label for="email">Ingresa tu email de contacto</label> 
+    <input class="form__input" type="email" id="email" size="30" required>
+    </div>
+    <!--nro de telefono-->
+    <div class="form-group">
+      <label for="phone">Telefono:</label> 
+      <input class="form__input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" required>
+      <small>Format: 123-4567890</small>
+    </div>
+    <!--nombre-->
+    <div class="form-group">
+      <label for="name">Nombre:</label> 
+      <input class="form__input" type="text" id="name" name="name" required>
+    </div>
+    <!--apellido-->
+    <div class="form-group">
+      <label for="lastname">Apellido:</label> 
+      <input class="form__input" type="text" id="lastname" name="lastname" required>
+    </div>
+    <!--obra social-->
+    <div class="form-group">
+      <label for=healthins>Tiene obra social?</label> 
+      <select name="healthins" id="healthins">
+        <option value="yes">Si</option>
+        <option value="no">No</option>
+      </select>
+      <label for="healhinsnum">Numero de Afiliado</label> 
+      <input class="form__input" type="text" id="healhinsnum" name="healhinsnum"
+        pattern="[0-9]{1}-[0-9]{2}-[0-9]{8}-[0-9]{1}" required>
+      <small>Formato: x-xx-xxxxxxxx-x</small>
+
+    </div>
+    <!--dni-->
+    <div class="form-group">
+      <label for="dni">DNI:</label> 
+      <input class="form__input" type="text" id="dni" name="dni" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}" required>
+      <small>Formato: xx.xxx.xxx</small>
+    </div>
+    <!--enviar-->
+    </div>
+  </form>
+</main>
+</body>
+
+</html>
